@@ -42,6 +42,163 @@ The platform provides customizable chatbot widgets, AI-powered responses, websit
 ### AI
 - OpenAI API / Gemini API
 
+## ⚙️ Installation & Setup
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- Node.js (v18 or later)
+- npm or yarn
+- MongoDB
+- Razorpay Account
+- OpenAI/Gemini API Key
+
+---
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Karan1845-coder/Shifra.git
+cd Shifra
+```
+
+---
+
+### 2. Install Dependencies
+
+#### Frontend
+
+```bash
+cd client
+npm install
+```
+
+#### Backend
+
+```bash
+cd server
+npm install
+```
+
+---
+
+### 3. Configure Environment Variables
+
+Create a `.env` file inside the backend directory:
+
+```env
+PORT=5000
+
+MONGODB_URI=your_mongodb_connection_string
+
+JWT_SECRET=your_jwt_secret
+
+OPENAI_API_KEY=your_openai_api_key
+# OR
+GEMINI_API_KEY=your_gemini_api_key
+
+RAZORPAY_KEY_ID=your_razorpay_key_id
+RAZORPAY_KEY_SECRET=your_razorpay_key_secret
+
+CLIENT_URL=http://localhost:3000
+```
+
+---
+
+### 4. Start MongoDB
+
+If running locally:
+
+```bash
+mongod
+```
+
+Or use a MongoDB Atlas connection string.
+
+---
+
+### 5. Run the Backend
+
+```bash
+cd server
+npm run dev
+```
+
+Backend will run on:
+
+```bash
+http://localhost:5000
+```
+
+---
+
+### 6. Run the Frontend
+
+```bash
+cd client
+npm start
+```
+
+Frontend will run on:
+
+```bash
+http://localhost:3000
+```
+
+---
+
+### 7. Access the Application
+
+Open your browser and visit:
+
+```bash
+http://localhost:3000
+```
+
+Create an account, choose a subscription plan, configure your chatbot, and start embedding it into your website.
+
+---
+
+## 🌐 Deployment
+
+### Frontend
+
+Deploy using:
+
+- Vercel
+- Netlify
+
+### Backend
+
+Deploy using:
+
+- Render
+- Railway
+- AWS
+- DigitalOcean
+
+### Database
+
+- MongoDB Atlas
+
+---
+
+## 🔌 Embedding Shifra AI
+
+After creating your chatbot, copy the generated embed code and paste it before the closing `</body>` tag of your website:
+
+```html
+<script src="https://your-domain.com/widget.js"></script>
+<script>
+  Shifra.init({
+    chatbotId: "YOUR_CHATBOT_ID"
+  });
+</script>
+```
+
+The chatbot will automatically appear on your website and start assisting visitors.
+
 ## 🚀 How It Works
 
 1. User signs up on Shifra AI.
